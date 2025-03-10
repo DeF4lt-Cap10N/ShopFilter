@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaStar} from "react-icons/fa";
+import { FaStar } from "react-icons/fa";
 import { IoBagHandleSharp } from "react-icons/io5";
 import './Product.css'
 
@@ -19,7 +19,7 @@ const Product = () => {
                      <del>$300</del>200
                   </div>
                   <div className="bag">
-                     <IoBagHandleSharp className='bag-icon'/>
+                     <IoBagHandleSharp className='bag-icon' />
                   </div>
                </section>
             </div>
