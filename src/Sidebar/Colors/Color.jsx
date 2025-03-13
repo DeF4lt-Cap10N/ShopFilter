@@ -4,7 +4,7 @@ import './Color.css'
 const Color = () => {
   return (
     <div>
-      
+      colors
     </div>
   )
 }

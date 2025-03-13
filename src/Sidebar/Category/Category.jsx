@@ -3,7 +3,7 @@ import './Category.css'
 const Category = () => {
   return (
     <div>
-      
+      category
     </div>
   )
 }
