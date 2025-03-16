@@ -11,7 +11,6 @@ const Price = () => {
       <Input/>
       <Input/>
       <Input/>
-    
     </div>
   )
 }
