@@ -1,5 +1,6 @@
 import { FaStar } from "react-icons/fa";
 import { IoBagHandleSharp } from "react-icons/io5";
+import { AiFillStar } from "react-icons/ai";
 
 const Card = () => {
   return (

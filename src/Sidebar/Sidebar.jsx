@@ -4,7 +4,8 @@ import Price from './Price/Price'
 import Colors from './Colors/Color'
 import './sidebar.css'
 
-const Sidebar = () => {
+const Sidebar = (handleChange) => {
+  console.log(handleChange);
   return (
     <>
     <section className="sidebar">
