@@ -12,9 +12,9 @@ const Sidebar = (handleChange) => {
       <div className="logo-container">
          <h1 className='sidebar-title'>cart</h1>
       </div>
-      <Category/>
-      <Price/>
-      <Colors/>
+      <Category handleChange={handleChange}/>
+      <Price handleChange={handleChange}/>
+      <Colors handleChange={handleChange}/>
     </section>
     </>
   )
