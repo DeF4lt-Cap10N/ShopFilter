@@ -26,6 +26,18 @@ const Category = ({ handleChange }) => {
           title="flats"
           name="test"
         />
+        <Input
+          handleChange={handleChange}
+          value="flats"
+          title="flats"
+          name="test"
+        />
+        <Input
+          handleChange={handleChange}
+          value="flats"
+          title="flats"
+          name="test"
+        />
 
         <Input
           handleChange={handleChange}
