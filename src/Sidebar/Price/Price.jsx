@@ -37,7 +37,7 @@ const Price = ({handleChange}) => {
         <Input 
         handleChange={handleChange}
         value={200}
-        title="$over 200"
+        title="$over 150"
         name="test1"
         />
 

@@ -8,7 +8,7 @@ const Color = ({ handleChange }) => {
       <h2 className="sidebar-title color-title">Colors</h2>
       <div>
         <label className='sidebar-label-container'>
-          <input onChange={handleChange} type="radio" value="" name='test3' />
+          <input onChange={handleChange} type="radio" value="" name='test1' />
           <span className='checkmark all'></span>
           All
         </label>
@@ -17,7 +17,7 @@ const Color = ({ handleChange }) => {
           handleChange={handleChange}
           value="black"
           title="Black"
-          name="test3"
+          name="test1"
           color="black"
         />
 
@@ -25,7 +25,7 @@ const Color = ({ handleChange }) => {
           handleChange={handleChange}
           value="blue"
           title="Blue"
-          name="test3"
+          name="test1"
           color="blue"
         />
 
@@ -33,7 +33,7 @@ const Color = ({ handleChange }) => {
           handleChange={handleChange}
           value="red"
           title="Red"
-          name="test3"
+          name="test1"
           color="red"
         />
 
@@ -41,7 +41,7 @@ const Color = ({ handleChange }) => {
           handleChange={handleChange}
           value="green"
           title="Green"
-          name="test3"
+          name="test1"
           color="green"
         />
 
@@ -49,7 +49,7 @@ const Color = ({ handleChange }) => {
           handleChange={handleChange}
           value="white"
           title="White"
-          name="test3"
+          name="test1"
           color="white"
         />
 

@@ -4,7 +4,7 @@ import Price from './Price/Price'
 import Colors from './Colors/Color'
 import './sidebar.css'
 
-const Sidebar = (handleChange) => {
+const Sidebar = ({handleChange}) => {
   console.log(handleChange);
   return (
     <>

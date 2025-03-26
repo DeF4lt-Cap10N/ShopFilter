@@ -4,7 +4,8 @@ import Product from "./Product/Product"
 import Recommended from "./Recommended/Recommended"
 import Sidebar from "./Sidebar/Sidebar"
 import products from "./db/data"
-
+import Card from "./components/Card"
+import "./index.css";
 
 function App() {
 
@@ -14,14 +15,14 @@ function App() {
   // ----------------input filter-----------------
   const [query, setQuery] = useState("");
 
-  const handleInputChange = e => {
+  const handleInputChange = (e) => {
     setQuery(e.target.value);
   }
 
   const filterItems = products.filter((p) =>
-    p.title.toLocaleLowerCase().indexOf(query.toLocaleLowerCase() !== -1)
+    p.title.toLocaleLowerCase().indexOf(query.toLocaleLowerCase()) !== -1
   );
-
+  
 
   // ----------------Radio filter-----------------
   const handleChange = (e) => {
@@ -30,10 +31,11 @@ function App() {
 
 
   // ----------------Buttons filter-----------------
-  const handlelick = (e) => {
+  const handleClick = (e) => {
     setSelectCategory(e.target.value)
   }
 
+  ///filter data
   function filterData(products, selected, query) {
     let filterProducts = products;
 
@@ -44,7 +46,7 @@ function App() {
 
     // selector filter
     if (selected) {
-      filterProducts = filterProducts.filter(({ category, color, company }) => category === selected || color === selected || company === selected || newPrice === selected || title === selected);
+      filterProducts = filterProducts.filter(({ category, color, company, newPrice, title }) => category === selected || color === selected || company === selected || newPrice === selected || title === selected);
     }
 
     return filterProducts.map(({ img, title, reviews,newPrice, prevPrice }) =>
@@ -59,13 +61,16 @@ function App() {
     )
   }
 
+  const result = filterData(products, selectCategory, query);
+
+
   return (
     <>
       <div>
         <Sidebar handleChange={handleChange}/>
-        <Nav />
-        <Recommended />
-        <Product />
+        <Nav query={query} handleInputChange={handleInputChange}/>
+        <Recommended handleClick={handleClick}/>
+        <Product result={result}/>
       </div>
     </>
   )

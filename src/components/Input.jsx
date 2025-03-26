@@ -4,7 +4,7 @@ const Input = ({handleChange, value, title, name, color}) => {
     <>
       <label  onChange={handleChange} className="sidebar-label-container">
         <input onChange={handleChange} value={value} name = {name} type="radio" />
-        <span onChange={handleChange} className="checkmark"></span>{title}
+        <span className="checkmark" style={{backgroundColor:color}}></span>{title}
       </label>
     </>
   )

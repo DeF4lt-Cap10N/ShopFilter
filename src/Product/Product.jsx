@@ -1,21 +1,11 @@
 import React from 'react'
-import Card from "../components/Card"
 
 import './Product.css'
 
-const Product = () => {
+const Product = ({result}) => {
    return (
       <section className='card-container'>
-         <Card/>
-         <Card/>
-         <Card/>
-         <Card/>
-         <Card/>
-         <Card/>
-         <Card/>
-         <Card/>
-         <Card/>
-         <Card/>
+         {result}
       </section>
    )
 }
